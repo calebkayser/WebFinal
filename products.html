@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products – GreenTech Solutions</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="site-title">GreenTech Solutions</h1>
+    </header>
+
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html" aria-current="page">Products</a>
+        <a href="blog.html">Resources</a>
+        <a href="contact.html">Contact</a>
+        <button id="contrastToggle" class="contrast-toggle">High Contrast</button>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Our Products</h2>
+            <p>Explore our eco‑friendly technology solutions. Use the filter to find what you need.</p>
+
+            <label for="productFilter">Filter by category:</label>
+            <select id="productFilter">
+                <option value="all">All</option>
+                <option value="energy">Energy</option>
+                <option value="recycling">Recycling</option>
+                <option value="software">Software</option>
+            </select>
+        </section>
+
+        <section class="product-grid">
+            <article class="product-card" data-category="energy">
+                <h3>Smart Office Sensor Kit</h3>
+                <img src="images/Tech2.jpg" alt="Smart energy dashboard">
+                <p>Monitor lighting, temperature, and device usage to reduce energy waste.</p>
+            </article>
+
+            <article class="product-card" data-category="recycling">
+                <h3>Smart Recycling Station</h3>
+                <img src="images/Nature2.jpg" alt="Recycling system concept">
+                <p>Automated sorting and tracking to improve recycling rates.</p>
+            </article>
+
+            <article class="product-card" data-category="software">
+                <h3>Carbon Insight Dashboard</h3>
+                <img src="images/Tech1.jpg" alt="Carbon tracking visualization">
+                <p>Visualize emissions and identify opportunities for improvement.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> GreenTech Solutions</p>
+    </footer>
+</body>
+</html>
